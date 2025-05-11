@@ -9,9 +9,9 @@ async def on_ready():
     await bot.tree.sync()
     print(f"Le bot est en ligne : {bot.user}")
 
-@bot.tree.command(name="bonjour", description="Le bot dit bonjour")
+@bot.tree.command(name="ping", description="Latence du bot")
 async def bonjour(interaction: discord.Interaction):
     latency = round(bot.latency * 1000)
     await interaction.response.send_message(f"Latence du bot : {latency}ms")
 
-bot.run("LE-TOKEN")  # Remplace par ton vrai token
+bot.run("LE-TOKEN") 
