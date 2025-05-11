@@ -14,4 +14,4 @@ async def bonjour(interaction: discord.Interaction):
     latency = round(bot.latency * 1000)
     await interaction.response.send_message(f"Latence du bot : {latency}ms")
 
-bot.run("LE-TOKEN") 
+bot.run("le token de votre bot") 
